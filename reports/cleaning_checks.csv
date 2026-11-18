@@ -1,0 +1,57 @@
+check,status,detail
+Every transaction gets a category other than 'Other',PASS,0 rows are 'Other'
+A partner bank is present exactly when there is a real partner account,PASS,
+No account-day has a balance difference above 5,PASS,largest difference 3.00
+Reconciliation: account: row count,PASS,"before 4,500  after 4,500"
+Reconciliation: card: row count,PASS,before 892  after 892
+Reconciliation: client: row count,PASS,"before 5,369  after 5,369"
+Reconciliation: disp: row count,PASS,"before 5,369  after 5,369"
+Reconciliation: district: row count,PASS,before 77  after 77
+Reconciliation: loan: row count,PASS,before 682  after 682
+Reconciliation: order: row count,PASS,"before 6,471  after 6,471"
+Reconciliation: trans: row count,PASS,"before 1,056,320  after 1,056,320"
+Reconciliation: trans type PRIJEM: sum of amount,PASS,"before 3,227,482,664  after 3,227,482,664"
+Reconciliation: trans type PRIJEM: row count,PASS,"before 405,083  after 405,083"
+Reconciliation: trans type VYBER: sum of amount,PASS,"before 208,603,758  after 208,603,758"
+Reconciliation: trans type VYBER: row count,PASS,"before 16,666  after 16,666"
+Reconciliation: trans type VYDAJ: sum of amount,PASS,"before 2,821,775,775  after 2,821,775,775"
+Reconciliation: trans type VYDAJ: row count,PASS,"before 634,571  after 634,571"
+Reconciliation: trans: sum of balance,PASS,"before 40,687,734,247.0  after 40,687,734,247.0"
+Reconciliation: trans: first date,PASS,1993-01-01 vs 1993-01-01
+Reconciliation: trans: last date,PASS,1998-12-31 vs 1998-12-31
+Reconciliation: trans: distinct accounts,PASS,"before 4,500  after 4,500"
+Reconciliation: trans: sum of signed amount equals credits minus debits,PASS,"before 197,103,131.0  after 197,103,131.0"
+Reconciliation: trans: unchanged raw amounts,PASS,"before 6,257,862,197.0  after 6,257,862,197.0"
+account_clean: account_id is unique and never null,PASS,
+card_clean: card_id is unique and never null,PASS,
+client_clean: client_id is unique and never null,PASS,
+disp_clean: disp_id is unique and never null,PASS,
+district_clean: district_id is unique and never null,PASS,
+loan_clean: loan_id is unique and never null,PASS,
+order_clean: order_id is unique and never null,PASS,
+trans_clean: trans_id is unique and never null,PASS,
+trans_clean: key and derived columns have no nulls,PASS,{}
+account_clean.district_id -> district: no orphan rows,PASS,0 unmatched
+client_clean.district_id -> district: no orphan rows,PASS,0 unmatched
+disp_clean.client_id -> client: no orphan rows,PASS,0 unmatched
+disp_clean.account_id -> account: no orphan rows,PASS,0 unmatched
+card_clean.disp_id -> disp: no orphan rows,PASS,0 unmatched
+loan_clean.account_id -> account: no orphan rows,PASS,0 unmatched
+order_clean.account_id -> account: no orphan rows,PASS,0 unmatched
+trans_clean.account_id -> account: no orphan rows,PASS,0 unmatched
+Every account has an owner with a known age band,PASS,
+Matches profiling: zero-amount rows,PASS,"got 162, profiling found 162"
+Matches profiling: negative-balance rows,PASS,"got 2,999, profiling found 2,999"
+Matches profiling: blank operation rows,PASS,"got 183,114, profiling found 183,114"
+Matches profiling: k_symbol missing,PASS,"got 481,881, profiling found 481,881"
+Matches profiling: k_symbol single space,PASS,"got 53,433, profiling found 53,433"
+Matches profiling: partner account was zero,PASS,"got 21,881, profiling found 21,881"
+Matches profiling: rows with partner bank and account,PASS,"got 273,508, profiling found 273,508"
+Matches profiling: identical-looking rows,PASS,"got 3,448, profiling found 3,448"
+Matches profiling: identical-looking groups,PASS,"got 1,723, profiling found 1,723"
+Matches profiling: outgoing transfers without a counterparty,PASS,"got 1, profiling found 1"
+Matches profiling: loans with status A,PASS,"got 203, profiling found 203"
+Matches profiling: loans with status B,PASS,"got 31, profiling found 31"
+Matches profiling: loans with status C,PASS,"got 403, profiling found 403"
+Matches profiling: loans with status D,PASS,"got 45, profiling found 45"
+Matches profiling: accounts that ever had a negative balance,PASS,"got 288, profiling found 288"

@@ -1,0 +1,21 @@
+metric,before,after,match
+account: row count,4500,4500,True
+card: row count,892,892,True
+client: row count,5369,5369,True
+disp: row count,5369,5369,True
+district: row count,77,77,True
+loan: row count,682,682,True
+order: row count,6471,6471,True
+trans: row count,1056320,1056320,True
+trans type PRIJEM: sum of amount,3227482664,3227482664,True
+trans type PRIJEM: row count,405083,405083,True
+trans type VYBER: sum of amount,208603758,208603758,True
+trans type VYBER: row count,16666,16666,True
+trans type VYDAJ: sum of amount,2821775775,2821775775,True
+trans type VYDAJ: row count,634571,634571,True
+trans: sum of balance,40687734247.0,40687734247.0,True
+trans: first date,1993-01-01,1993-01-01,True
+trans: last date,1998-12-31,1998-12-31,True
+trans: distinct accounts,4500,4500,True
+trans: sum of signed amount equals credits minus debits,197103131.0,197103131.0,True
+trans: unchanged raw amounts,6257862197.0,6257862197.0,True

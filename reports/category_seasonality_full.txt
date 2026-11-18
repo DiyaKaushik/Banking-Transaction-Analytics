@@ -1,0 +1,23 @@
+﻿transaction_category  cal_month month_name  postings  index_vs_category_average
+     Card withdrawal          1    January      2965                       4.43
+     Card withdrawal          2   February       264                       0.39
+     Card withdrawal          3      March       286                       0.43
+     Card withdrawal          4      April       281                       0.42
+     Card withdrawal          5        May       303                       0.45
+     Card withdrawal          6       June       375                       0.56
+     Card withdrawal          7       July       361                       0.54
+     Card withdrawal          8     August       403                       0.60
+     Card withdrawal          9  September       396                       0.59
+     Card withdrawal         10    October       458                       0.68
+     Card withdrawal         11   November       476                       0.71
+     Card withdrawal         12   December      1468                       2.19
+     Cash withdrawal          1    January     62668                       2.74
+     Cash withdrawal          2   February     12149                       0.53
+     Cash withdrawal          3      March     15834                       0.69
+     Cash withdrawal          4      April     16265                       0.71
+     Cash withdrawal         12   December     32303                       1.41
+    Penalty interest          1    January       243                       1.85
+    Penalty interest          2   February       182                       1.38
+    Penalty interest          3      March        94                       0.72
+    Penalty interest          4      April        85                       0.65
+    Penalty interest          5        May        85                       0.65

@@ -1,0 +1,34 @@
+metric,pandas,mysql,match
+district: row count,77,77,True
+client: row count,5369,5369,True
+account: row count,4500,4500,True
+disp: row count,5369,5369,True
+card: row count,892,892,True
+loan: row count,682,682,True
+standing_order: row count,6471,6471,True
+transactions: row count,1056320,1056320,True
+transactions type PRIJEM: row count,405083,405083,True
+transactions type PRIJEM: sum of amount,3227482664,3227482664,True
+transactions type VYDAJ: row count,634571,634571,True
+transactions type VYDAJ: sum of amount,2821775775,2821775775,True
+transactions type VYBER: row count,16666,16666,True
+transactions type VYBER: sum of amount,208603758,208603758,True
+transactions: sum of signed_amount,197103131,197103131,True
+transactions: distinct accounts,4500,4500,True
+transactions: negative-balance rows,2999,2999,True
+transactions: first date,1993-01-01,1993-01-01,True
+transactions: last date,1998-12-31,1998-12-31,True
+transactions category Cash withdrawal: row count,274675,274675,True
+transactions category Interest credited: row count,183114,183114,True
+transactions category Cash deposit: row count,156743,156743,True
+transactions category Service fees: row count,155832,155832,True
+transactions category Household payment: row count,118065,118065,True
+transactions category Outgoing transfer: row count,60972,60972,True
+transactions category Incoming transfer: row count,34888,34888,True
+transactions category Pension credit: row count,30338,30338,True
+transactions category Insurance payment: row count,18500,18500,True
+transactions category Loan payment: row count,13580,13580,True
+transactions category Card withdrawal: row count,8036,8036,True
+transactions category Penalty interest: row count,1577,1577,True
+dim_date: days,2191,2191,True
+loan: sum of amount,103261740,103261740.00,True

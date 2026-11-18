@@ -1,0 +1,22 @@
+# Data quality report
+
+| Table | Column | Issue | Rows | Share % | Handling |
+|---|---|---|---:|---:|---|
+| trans | operation | Blank operation (exactly the interest credits) | 183,114 | 17.34 | Kept; operation_clean = NONE; category 'Interest credited' |
+| trans | k_symbol | Missing k_symbol | 481,881 | 45.62 | Kept; k_symbol_clean = NONE; k_symbol_kind = missing |
+| trans | k_symbol | Single space instead of a k_symbol (only on debits) | 53,433 | 5.06 | Kept; k_symbol_clean = NONE; k_symbol_kind = space |
+| trans | bank | No partner bank | 782,812 | 74.11 | Kept as NULL (no counterparty) |
+| trans | account | Partner account is 0 (only on cash and card withdrawals) | 21,881 | 2.07 | partner_account = NULL; partner_account_was_zero = 1 |
+| trans | account | No partner account and no zero | 760,931 | 72.04 | Kept as NULL (no counterparty) |
+| trans | amount | Zero-amount transactions (interest postings) | 162 | 0.02 | Kept; is_zero_amount = 1 |
+| trans | balance | Negative balance (in 288 accounts) | 2,999 | 0.28 | Kept; is_negative_balance = 1 |
+| trans | (all but trans_id) | Identical-looking rows (kept: most are separate postings) | 3,448 | 0.33 | Kept; is_repeated_posting = 1; repeat_group_size |
+| trans | (all but trans_id) | Identical-looking rows whose members share one balance (possible phantom copies) | 8 | 0.0 | Kept; possible_phantom_copy = 1; listed in dq_exceptions.csv |
+| trans | balance | Account-day balance differs by up to 2 from the previous day (rounding of whole-number values) | 127,709 | 12.09 | Kept; balance_check = rounding |
+| trans | balance | Account-day balance differs by more than 2 from the previous day | 7 | 0.0 | Kept; balance_check = review; listed in dq_exceptions.csv |
+| trans | (order) | Rows on account-days with several postings (order within the day unknown; trans_id is not chronological) | 461,664 | 43.7 | No order derived; balance_before = balance - signed_amount per row |
+| trans | operation/bank/account | Outgoing transfer with no counterparty | 1 | 0.0 | Kept; listed in dq_exceptions.csv |
+| district | A12 (unemployment_rate_1995) | Missing value | 1 | 1.3 | Kept as NULL |
+| district | A15 (crimes_1995) | Missing value | 1 | 1.3 | Kept as NULL |
+| loan | status | Status is fully determined by 'balance ever negative' and 'end date reaches 1999' | 682 | 100.0 | Kept with labels; no predictive claims |
+| client | birth_date | Exact date of birth is personal data | 5,369 | 100.0 | Not exported; birth_year, age and age band only |

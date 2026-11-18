@@ -1,0 +1,98 @@
+metric,pandas,mysql,match
+accounts_with_postings,4500.0,4500.0,True
+avg_posting_value,5924.21,5924.21,True
+avg_postings_per_account,234.74,234.74,True
+band_postings|0 zero,162.0,162.0,True
+band_postings|1 to 999,432981.0,432981.0,True
+"band_postings|1,000 to 4,999",285682.0,285682.0,True
+"band_postings|10,000 to 24,999",142185.0,142185.0,True
+"band_postings|25,000 and over",55162.0,55162.0,True
+"band_postings|5,000 to 9,999",140148.0,140148.0,True
+band_value|0 zero,0.0,0.0,True
+band_value|1 to 999,76379903.0,76379903.0,True
+"band_value|1,000 to 4,999",790131870.0,790131870.0,True
+"band_value|10,000 to 24,999",2358759076.0,2358759076.0,True
+"band_value|25,000 and over",2056234381.0,2056234381.0,True
+"band_value|5,000 to 9,999",976356967.0,976356967.0,True
+category_median|Card withdrawal,2200.0,2200.0,True
+category_median|Cash deposit,13564.0,13564.0,True
+category_median|Cash withdrawal,4560.0,4560.0,True
+category_median|Household payment,3369.0,3369.0,True
+category_median|Incoming transfer,3989.0,3989.0,True
+category_median|Insurance payment,629.0,629.0,True
+category_median|Interest credited,133.0,133.0,True
+category_median|Loan payment,3874.0,3874.0,True
+category_median|Outgoing transfer,1395.0,1395.0,True
+category_median|Penalty interest,9.0,9.0,True
+category_median|Pension credit,5553.0,5553.0,True
+category_median|Service fees,15.0,15.0,True
+category_overdraft_triggers|Card withdrawal,0.0,0.0,True
+category_overdraft_triggers|Cash deposit,0.0,0.0,True
+category_overdraft_triggers|Cash withdrawal,592.0,592.0,True
+category_overdraft_triggers|Household payment,202.0,202.0,True
+category_overdraft_triggers|Incoming transfer,0.0,0.0,True
+category_overdraft_triggers|Insurance payment,15.0,15.0,True
+category_overdraft_triggers|Interest credited,0.0,0.0,True
+category_overdraft_triggers|Loan payment,20.0,20.0,True
+category_overdraft_triggers|Outgoing transfer,36.0,36.0,True
+category_overdraft_triggers|Penalty interest,2.0,2.0,True
+category_overdraft_triggers|Pension credit,0.0,0.0,True
+category_overdraft_triggers|Service fees,2.0,2.0,True
+category_p90|Card withdrawal,3700.0,3700.0,True
+category_p90|Cash deposit,33513.0,33513.0,True
+category_p90|Cash withdrawal,20800.0,20800.0,True
+category_p90|Household payment,8323.0,8323.0,True
+category_p90|Incoming transfer,44333.0,44333.0,True
+category_p90|Insurance payment,3572.0,3572.0,True
+category_p90|Interest credited,264.0,264.0,True
+category_p90|Loan payment,7223.0,7223.0,True
+category_p90|Outgoing transfer,4694.0,4694.0,True
+category_p90|Penalty interest,60.0,60.0,True
+category_p90|Pension credit,6683.0,6683.0,True
+category_p90|Service fees,15.0,15.0,True
+category_postings|Card withdrawal,8036.0,8036.0,True
+category_postings|Cash deposit,156743.0,156743.0,True
+category_postings|Cash withdrawal,274675.0,274675.0,True
+category_postings|Household payment,118065.0,118065.0,True
+category_postings|Incoming transfer,34888.0,34888.0,True
+category_postings|Insurance payment,18500.0,18500.0,True
+category_postings|Interest credited,183114.0,183114.0,True
+category_postings|Loan payment,13580.0,13580.0,True
+category_postings|Outgoing transfer,60972.0,60972.0,True
+category_postings|Penalty interest,1577.0,1577.0,True
+category_postings|Pension credit,30338.0,30338.0,True
+category_postings|Service fees,155832.0,155832.0,True
+category_value|Card withdrawal,18170400.0,18170400.0,True
+category_value|Cash deposit,2418522949.0,2418522949.0,True
+category_value|Cash withdrawal,2314362168.0,2314362168.0,True
+category_value|Household payment,498506416.0,498506416.0,True
+category_value|Incoming transfer,614007835.0,614007835.0,True
+category_value|Insurance payment,24175193.0,24175193.0,True
+category_value|Interest credited,27479762.0,27479762.0,True
+category_value|Loan payment,55253001.0,55253001.0,True
+category_value|Outgoing transfer,117130574.0,117130574.0,True
+category_value|Penalty interest,37736.0,37736.0,True
+category_value|Pension credit,167472118.0,167472118.0,True
+category_value|Service fees,2744045.0,2744045.0,True
+channel_postings|Bank-generated,340523.0,340523.0,True
+channel_postings|Card,8036.0,8036.0,True
+channel_postings|Cash,431418.0,431418.0,True
+channel_postings|Transfers and payments,276343.0,276343.0,True
+channel_value|Bank-generated,30261543.0,30261543.0,True
+channel_value|Card,18170400.0,18170400.0,True
+channel_value|Cash,4732885117.0,4732885117.0,True
+channel_value|Transfers and payments,1476545137.0,1476545137.0,True
+credit_postings,405083.0,405083.0,True
+credit_value,3227482664.0,3227482664.0,True
+debit_postings,651237.0,651237.0,True
+debit_value,3030379533.0,3030379533.0,True
+net_flow,197103131.0,197103131.0,True
+overdraft_trigger_postings,869.0,869.0,True
+total_postings,1056320.0,1056320.0,True
+total_value,6257862197.0,6257862197.0,True
+type_postings|PRIJEM,405083.0,405083.0,True
+type_postings|VYBER,16666.0,16666.0,True
+type_postings|VYDAJ,634571.0,634571.0,True
+type_value|PRIJEM,3227482664.0,3227482664.0,True
+type_value|VYBER,208603758.0,208603758.0,True
+type_value|VYDAJ,2821775775.0,2821775775.0,True

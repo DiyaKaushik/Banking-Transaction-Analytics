@@ -1,0 +1,54 @@
+check,status,detail
+Manifest records the source database,FINDING,no 'database' column: the manifest was written by an older version of the download script
+Manifest lists exactly the 8 'financial' tables,PASS,"['account', 'card', 'client', 'disp', 'district', 'loan', 'order', 'trans']"
+account: row count matches the manifest,PASS,"4,500 rows"
+account: account_id is unique,PASS,
+card: row count matches the manifest,PASS,892 rows
+card: card_id is unique,PASS,
+client: row count matches the manifest,PASS,"5,369 rows"
+client: client_id is unique,PASS,
+disp: row count matches the manifest,PASS,"5,369 rows"
+disp: disp_id is unique,PASS,
+district: row count matches the manifest,PASS,77 rows
+district: district_id is unique,PASS,
+loan: row count matches the manifest,PASS,682 rows
+loan: loan_id is unique,PASS,
+order: row count matches the manifest,PASS,"6,471 rows"
+order: order_id is unique,PASS,
+trans: row count matches the manifest,PASS,"1,056,320 rows"
+trans: trans_id is unique,PASS,
+"Loaded data has the 'financial' schema (client has gender and birth_date, no birth_number)",PASS,
+account.date parses as a date,PASS,1993-01-01 to 1997-12-29
+card.issued parses as a date,PASS,1993-11-07 to 1998-12-29
+client.birth_date parses as a date,PASS,1911-08-20 to 1987-09-27
+loan.date parses as a date,PASS,1993-07-05 to 1998-12-08
+trans.date has no missing values,PASS,1993-01-01 to 1998-12-31
+account.district_id -> district: no orphan rows,PASS,"0 unmatched of 4,500"
+client.district_id -> district: no orphan rows,PASS,"0 unmatched of 5,369"
+disp.client_id -> client: no orphan rows,PASS,"0 unmatched of 5,369"
+disp.account_id -> account: no orphan rows,PASS,"0 unmatched of 5,369"
+card.disp_id -> disp: no orphan rows,PASS,0 unmatched of 892
+loan.account_id -> account: no orphan rows,PASS,0 unmatched of 682
+order.account_id -> account: no orphan rows,PASS,"0 unmatched of 6,471"
+trans.account_id -> account: no orphan rows,PASS,"0 unmatched of 1,056,320"
+Every account has exactly one OWNER,PASS,
+Every client has exactly one disposition,PASS,
+Every account has at least one transaction,PASS,
+No transaction is dated before its account was opened,PASS,0 rows
+trans.type only has the expected values,PASS,"['PRIJEM', 'VYBER', 'VYDAJ']"
+trans.type has no missing values,PASS,
+trans.amount has no negative values,PASS,minimum 0.00
+trans.date stays within 1993-1998,PASS,
+trans.balance has no missing values,PASS,
+Zero-amount transactions,FINDING,162 rows
+Negative balances,FINDING,"2,999 rows"
+operation is blank exactly on the UROK (interest) rows,PASS,
+bank and partner account always appear together; 0 only where bank is blank,PASS,
+"Running balance = previous balance + signed amount (ordering: date, then trans_id)",FINDING,"532,349 rows do not reconcile"
+End-of-day balance equals the running total of signed amounts,FINDING,"718,976 of 814,768 account-days do not reconcile"
+Each account-day is consistent with the previous one (order-independent),FINDING,"64,128 of 814,768 account-days are not"
+Account-days whose difference is not explained by rounding (above 5),PASS,"0 of 814,768 account-days"
+trans_id is unique (no duplicate transaction IDs),PASS,
+Rows identical in every column except trans_id,FINDING,"3,448 rows in 1,723 groups"
+"Negative balance ever <-> bad loan (B, D)",PASS,0 exceptions of 682 loans
+"End date reaches 1999 <-> running loan (C, D)",PASS,0 exceptions of 682 loans

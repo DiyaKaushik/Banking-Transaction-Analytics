@@ -1,0 +1,307 @@
+metric,pandas,mysql,match
+avg_postings_per_month|age band|18-24,3.83,3.83,True
+avg_postings_per_month|age band|25-34,3.97,3.97,True
+avg_postings_per_month|age band|35-44,3.94,3.94,True
+avg_postings_per_month|age band|45-54,3.96,3.96,True
+avg_postings_per_month|age band|55-64,3.51,3.51,True
+avg_postings_per_month|age band|65+,3.03,3.03,True
+avg_postings_per_month|age band|under 18,3.8,3.8,True
+avg_postings_per_month|gender|F,3.78,3.78,True
+avg_postings_per_month|gender|M,3.76,3.76,True
+avg_postings_per_month|has card|no,3.69,3.69,True
+avg_postings_per_month|has card|yes,4.09,4.09,True
+avg_postings_per_month|has loan|no,3.58,3.58,True
+avg_postings_per_month|has loan|yes,4.83,4.83,True
+avg_postings_per_month|region|Prague,3.82,3.82,True
+avg_postings_per_month|region|central Bohemia,3.83,3.83,True
+avg_postings_per_month|region|east Bohemia,3.62,3.62,True
+avg_postings_per_month|region|north Bohemia,3.79,3.79,True
+avg_postings_per_month|region|north Moravia,3.8,3.8,True
+avg_postings_per_month|region|south Bohemia,3.75,3.75,True
+avg_postings_per_month|region|south Moravia,3.75,3.75,True
+avg_postings_per_month|region|west Bohemia,3.78,3.78,True
+avg_postings_per_month|statement frequency|After each transaction,4.34,4.34,True
+avg_postings_per_month|statement frequency|Monthly,3.73,3.73,True
+avg_postings_per_month|statement frequency|Weekly,4.27,4.27,True
+decile_accounts|1,450.0,450.0,True
+decile_accounts|10,450.0,450.0,True
+decile_accounts|2,450.0,450.0,True
+decile_accounts|3,450.0,450.0,True
+decile_accounts|4,450.0,450.0,True
+decile_accounts|5,450.0,450.0,True
+decile_accounts|6,450.0,450.0,True
+decile_accounts|7,450.0,450.0,True
+decile_accounts|8,450.0,450.0,True
+decile_accounts|9,450.0,450.0,True
+decile_postings|1,125620.0,125620.0,True
+decile_postings|10,25519.0,25519.0,True
+decile_postings|2,98830.0,98830.0,True
+decile_postings|3,88433.0,88433.0,True
+decile_postings|4,72403.0,72403.0,True
+decile_postings|5,68850.0,68850.0,True
+decile_postings|6,69305.0,69305.0,True
+decile_postings|7,63232.0,63232.0,True
+decile_postings|8,61188.0,61188.0,True
+decile_postings|9,42417.0,42417.0,True
+decile_value|1,2002619549.0,2002619549.0,True
+decile_value|10,62972223.0,62972223.0,True
+decile_value|2,1228398173.0,1228398173.0,True
+decile_value|3,881848063.0,881848063.0,True
+decile_value|4,643907275.0,643907275.0,True
+decile_value|5,469807546.0,469807546.0,True
+decile_value|6,353012316.0,353012316.0,True
+decile_value|7,266733452.0,266733452.0,True
+decile_value|8,192242849.0,192242849.0,True
+decile_value|9,126059208.0,126059208.0,True
+monthly_active_any|1993-01,96.0,96.0,True
+monthly_active_any|1993-02,194.0,194.0,True
+monthly_active_any|1993-03,298.0,298.0,True
+monthly_active_any|1993-04,375.0,375.0,True
+monthly_active_any|1993-05,466.0,466.0,True
+monthly_active_any|1993-06,553.0,553.0,True
+monthly_active_any|1993-07,652.0,652.0,True
+monthly_active_any|1993-08,754.0,754.0,True
+monthly_active_any|1993-09,858.0,858.0,True
+monthly_active_any|1993-10,933.0,933.0,True
+monthly_active_any|1993-11,1047.0,1047.0,True
+monthly_active_any|1993-12,1138.0,1138.0,True
+monthly_active_any|1994-01,1163.0,1163.0,True
+monthly_active_any|1994-02,1194.0,1194.0,True
+monthly_active_any|1994-03,1229.0,1229.0,True
+monthly_active_any|1994-04,1270.0,1270.0,True
+monthly_active_any|1994-05,1323.0,1323.0,True
+monthly_active_any|1994-06,1360.0,1360.0,True
+monthly_active_any|1994-07,1390.0,1390.0,True
+monthly_active_any|1994-08,1427.0,1427.0,True
+monthly_active_any|1994-09,1468.0,1468.0,True
+monthly_active_any|1994-10,1512.0,1512.0,True
+monthly_active_any|1994-11,1542.0,1542.0,True
+monthly_active_any|1994-12,1577.0,1577.0,True
+monthly_active_any|1995-01,1642.0,1642.0,True
+monthly_active_any|1995-02,1680.0,1680.0,True
+monthly_active_any|1995-03,1733.0,1733.0,True
+monthly_active_any|1995-04,1786.0,1786.0,True
+monthly_active_any|1995-05,1836.0,1836.0,True
+monthly_active_any|1995-06,1891.0,1891.0,True
+monthly_active_any|1995-07,1941.0,1941.0,True
+monthly_active_any|1995-08,1997.0,1997.0,True
+monthly_active_any|1995-09,2059.0,2059.0,True
+monthly_active_any|1995-10,2121.0,2121.0,True
+monthly_active_any|1995-11,2188.0,2188.0,True
+monthly_active_any|1995-12,2238.0,2238.0,True
+monthly_active_any|1996-01,2344.0,2344.0,True
+monthly_active_any|1996-02,2445.0,2445.0,True
+monthly_active_any|1996-03,2569.0,2569.0,True
+monthly_active_any|1996-04,2671.0,2671.0,True
+monthly_active_any|1996-05,2763.0,2763.0,True
+monthly_active_any|1996-06,2874.0,2874.0,True
+monthly_active_any|1996-07,3009.0,3009.0,True
+monthly_active_any|1996-08,3143.0,3143.0,True
+monthly_active_any|1996-09,3248.0,3248.0,True
+monthly_active_any|1996-10,3364.0,3364.0,True
+monthly_active_any|1996-11,3469.0,3469.0,True
+monthly_active_any|1996-12,3594.0,3594.0,True
+monthly_active_any|1997-01,3658.0,3658.0,True
+monthly_active_any|1997-02,3729.0,3729.0,True
+monthly_active_any|1997-03,3803.0,3803.0,True
+monthly_active_any|1997-04,3885.0,3885.0,True
+monthly_active_any|1997-05,3962.0,3962.0,True
+monthly_active_any|1997-06,4041.0,4041.0,True
+monthly_active_any|1997-07,4121.0,4121.0,True
+monthly_active_any|1997-08,4202.0,4202.0,True
+monthly_active_any|1997-09,4282.0,4282.0,True
+monthly_active_any|1997-10,4362.0,4362.0,True
+monthly_active_any|1997-11,4418.0,4418.0,True
+monthly_active_any|1997-12,4483.0,4483.0,True
+monthly_active_any|1998-01,4480.0,4480.0,True
+monthly_active_any|1998-02,4475.0,4475.0,True
+monthly_active_any|1998-03,4478.0,4478.0,True
+monthly_active_any|1998-04,4475.0,4475.0,True
+monthly_active_any|1998-05,4480.0,4480.0,True
+monthly_active_any|1998-06,4479.0,4479.0,True
+monthly_active_any|1998-07,4480.0,4480.0,True
+monthly_active_any|1998-08,4480.0,4480.0,True
+monthly_active_any|1998-09,4478.0,4478.0,True
+monthly_active_any|1998-10,4480.0,4480.0,True
+monthly_active_any|1998-11,4478.0,4478.0,True
+monthly_active_any|1998-12,4424.0,4424.0,True
+monthly_active_customer|1993-01,96.0,96.0,True
+monthly_active_customer|1993-02,194.0,194.0,True
+monthly_active_customer|1993-03,298.0,298.0,True
+monthly_active_customer|1993-04,375.0,375.0,True
+monthly_active_customer|1993-05,466.0,466.0,True
+monthly_active_customer|1993-06,553.0,553.0,True
+monthly_active_customer|1993-07,652.0,652.0,True
+monthly_active_customer|1993-08,754.0,754.0,True
+monthly_active_customer|1993-09,858.0,858.0,True
+monthly_active_customer|1993-10,933.0,933.0,True
+monthly_active_customer|1993-11,1047.0,1047.0,True
+monthly_active_customer|1993-12,1138.0,1138.0,True
+monthly_active_customer|1994-01,1163.0,1163.0,True
+monthly_active_customer|1994-02,1194.0,1194.0,True
+monthly_active_customer|1994-03,1229.0,1229.0,True
+monthly_active_customer|1994-04,1270.0,1270.0,True
+monthly_active_customer|1994-05,1323.0,1323.0,True
+monthly_active_customer|1994-06,1360.0,1360.0,True
+monthly_active_customer|1994-07,1390.0,1390.0,True
+monthly_active_customer|1994-08,1427.0,1427.0,True
+monthly_active_customer|1994-09,1468.0,1468.0,True
+monthly_active_customer|1994-10,1512.0,1512.0,True
+monthly_active_customer|1994-11,1542.0,1542.0,True
+monthly_active_customer|1994-12,1577.0,1577.0,True
+monthly_active_customer|1995-01,1642.0,1642.0,True
+monthly_active_customer|1995-02,1678.0,1678.0,True
+monthly_active_customer|1995-03,1732.0,1732.0,True
+monthly_active_customer|1995-04,1785.0,1785.0,True
+monthly_active_customer|1995-05,1835.0,1835.0,True
+monthly_active_customer|1995-06,1889.0,1889.0,True
+monthly_active_customer|1995-07,1939.0,1939.0,True
+monthly_active_customer|1995-08,1996.0,1996.0,True
+monthly_active_customer|1995-09,2057.0,2057.0,True
+monthly_active_customer|1995-10,2117.0,2117.0,True
+monthly_active_customer|1995-11,2186.0,2186.0,True
+monthly_active_customer|1995-12,2236.0,2236.0,True
+monthly_active_customer|1996-01,2342.0,2342.0,True
+monthly_active_customer|1996-02,2441.0,2441.0,True
+monthly_active_customer|1996-03,2564.0,2564.0,True
+monthly_active_customer|1996-04,2668.0,2668.0,True
+monthly_active_customer|1996-05,2757.0,2757.0,True
+monthly_active_customer|1996-06,2869.0,2869.0,True
+monthly_active_customer|1996-07,2999.0,2999.0,True
+monthly_active_customer|1996-08,3133.0,3133.0,True
+monthly_active_customer|1996-09,3239.0,3239.0,True
+monthly_active_customer|1996-10,3356.0,3356.0,True
+monthly_active_customer|1996-11,3460.0,3460.0,True
+monthly_active_customer|1996-12,3587.0,3587.0,True
+monthly_active_customer|1997-01,3654.0,3654.0,True
+monthly_active_customer|1997-02,3721.0,3721.0,True
+monthly_active_customer|1997-03,3798.0,3798.0,True
+monthly_active_customer|1997-04,3874.0,3874.0,True
+monthly_active_customer|1997-05,3956.0,3956.0,True
+monthly_active_customer|1997-06,4035.0,4035.0,True
+monthly_active_customer|1997-07,4109.0,4109.0,True
+monthly_active_customer|1997-08,4190.0,4190.0,True
+monthly_active_customer|1997-09,4276.0,4276.0,True
+monthly_active_customer|1997-10,4356.0,4356.0,True
+monthly_active_customer|1997-11,4409.0,4409.0,True
+monthly_active_customer|1997-12,4476.0,4476.0,True
+monthly_active_customer|1998-01,4471.0,4471.0,True
+monthly_active_customer|1998-02,4457.0,4457.0,True
+monthly_active_customer|1998-03,4465.0,4465.0,True
+monthly_active_customer|1998-04,4461.0,4461.0,True
+monthly_active_customer|1998-05,4463.0,4463.0,True
+monthly_active_customer|1998-06,4468.0,4468.0,True
+monthly_active_customer|1998-07,4465.0,4465.0,True
+monthly_active_customer|1998-08,4466.0,4466.0,True
+monthly_active_customer|1998-09,4460.0,4460.0,True
+monthly_active_customer|1998-10,4470.0,4470.0,True
+monthly_active_customer|1998-11,4465.0,4465.0,True
+monthly_active_customer|1998-12,4424.0,4424.0,True
+origin_postings|Bank-generated,340523.0,340523.0,True
+origin_postings|Customer-initiated,715797.0,715797.0,True
+origin_value|Bank-generated,30261543.0,30261543.0,True
+origin_value|Customer-initiated,6227600654.0,6227600654.0,True
+overdraft_band_accounts|0,4212.0,4212.0,True
+overdraft_band_accounts|1,124.0,124.0,True
+overdraft_band_accounts|10 or more,14.0,14.0,True
+overdraft_band_accounts|2 to 3,94.0,94.0,True
+overdraft_band_accounts|4 to 9,56.0,56.0,True
+overdraft_band_events|0,0.0,0.0,True
+overdraft_band_events|1,124.0,124.0,True
+overdraft_band_events|10 or more,210.0,210.0,True
+overdraft_band_events|2 to 3,217.0,217.0,True
+overdraft_band_events|4 to 9,318.0,318.0,True
+quartile_accounts|1,1125.0,1125.0,True
+quartile_accounts|2,1125.0,1125.0,True
+quartile_accounts|3,1125.0,1125.0,True
+quartile_accounts|4,1125.0,1125.0,True
+quartile_postings|1,102250.0,102250.0,True
+quartile_postings|2,148981.0,148981.0,True
+quartile_postings|3,194621.0,194621.0,True
+quartile_postings|4,269945.0,269945.0,True
+quartile_value|1,664747781.0,664747781.0,True
+quartile_value|2,1246397310.0,1246397310.0,True
+quartile_value|3,1845102537.0,1845102537.0,True
+quartile_value|4,2471353026.0,2471353026.0,True
+segment_accounts|age band|18-24,612.0,612.0,True
+segment_accounts|age band|25-34,838.0,838.0,True
+segment_accounts|age band|35-44,814.0,814.0,True
+segment_accounts|age band|45-54,834.0,834.0,True
+segment_accounts|age band|55-64,534.0,534.0,True
+segment_accounts|age band|65+,497.0,497.0,True
+segment_accounts|age band|under 18,371.0,371.0,True
+segment_accounts|gender|F,2208.0,2208.0,True
+segment_accounts|gender|M,2292.0,2292.0,True
+segment_accounts|has card|no,3608.0,3608.0,True
+segment_accounts|has card|yes,892.0,892.0,True
+segment_accounts|has loan|no,3818.0,3818.0,True
+segment_accounts|has loan|yes,682.0,682.0,True
+segment_accounts|region|Prague,554.0,554.0,True
+segment_accounts|region|central Bohemia,574.0,574.0,True
+segment_accounts|region|east Bohemia,544.0,544.0,True
+segment_accounts|region|north Bohemia,457.0,457.0,True
+segment_accounts|region|north Moravia,793.0,793.0,True
+segment_accounts|region|south Bohemia,370.0,370.0,True
+segment_accounts|region|south Moravia,778.0,778.0,True
+segment_accounts|region|west Bohemia,430.0,430.0,True
+segment_accounts|statement frequency|After each transaction,93.0,93.0,True
+segment_accounts|statement frequency|Monthly,4167.0,4167.0,True
+segment_accounts|statement frequency|Weekly,240.0,240.0,True
+segment_postings|age band|18-24,98497.0,98497.0,True
+segment_postings|age band|25-34,138873.0,138873.0,True
+segment_postings|age band|35-44,136891.0,136891.0,True
+segment_postings|age band|45-54,137989.0,137989.0,True
+segment_postings|age band|55-64,73625.0,73625.0,True
+segment_postings|age band|65+,60852.0,60852.0,True
+segment_postings|age band|under 18,69070.0,69070.0,True
+segment_postings|gender|F,352876.0,352876.0,True
+segment_postings|gender|M,362921.0,362921.0,True
+segment_postings|has card|no,562301.0,562301.0,True
+segment_postings|has card|yes,153496.0,153496.0,True
+segment_postings|has loan|no,579876.0,579876.0,True
+segment_postings|has loan|yes,135921.0,135921.0,True
+segment_postings|region|Prague,89913.0,89913.0,True
+segment_postings|region|central Bohemia,91421.0,91421.0,True
+segment_postings|region|east Bohemia,81799.0,81799.0,True
+segment_postings|region|north Bohemia,72965.0,72965.0,True
+segment_postings|region|north Moravia,129669.0,129669.0,True
+segment_postings|region|south Bohemia,57870.0,57870.0,True
+segment_postings|region|south Moravia,123129.0,123129.0,True
+segment_postings|region|west Bohemia,69031.0,69031.0,True
+segment_postings|statement frequency|After each transaction,16950.0,16950.0,True
+segment_postings|statement frequency|Monthly,655256.0,655256.0,True
+segment_postings|statement frequency|Weekly,43591.0,43591.0,True
+segment_value|age band|18-24,927439367.0,927439367.0,True
+segment_value|age band|25-34,1354117321.0,1354117321.0,True
+segment_value|age band|35-44,1351202928.0,1351202928.0,True
+segment_value|age band|45-54,1323581485.0,1323581485.0,True
+segment_value|age band|55-64,516493678.0,516493678.0,True
+segment_value|age band|65+,200674645.0,200674645.0,True
+segment_value|age band|under 18,554091230.0,554091230.0,True
+segment_value|gender|F,3030298613.0,3030298613.0,True
+segment_value|gender|M,3197302041.0,3197302041.0,True
+segment_value|has card|no,4344373882.0,4344373882.0,True
+segment_value|has card|yes,1883226772.0,1883226772.0,True
+segment_value|has loan|no,4647960064.0,4647960064.0,True
+segment_value|has loan|yes,1579640590.0,1579640590.0,True
+segment_value|region|Prague,800668801.0,800668801.0,True
+segment_value|region|central Bohemia,810203183.0,810203183.0,True
+segment_value|region|east Bohemia,718431401.0,718431401.0,True
+segment_value|region|north Bohemia,618441718.0,618441718.0,True
+segment_value|region|north Moravia,1132900419.0,1132900419.0,True
+segment_value|region|south Bohemia,518092897.0,518092897.0,True
+segment_value|region|south Moravia,1052914790.0,1052914790.0,True
+segment_value|region|west Bohemia,575947445.0,575947445.0,True
+segment_value|statement frequency|After each transaction,260889740.0,260889740.0,True
+segment_value|statement frequency|Monthly,5303818831.0,5303818831.0,True
+segment_value|statement frequency|Weekly,662892083.0,662892083.0,True
+top_account_value|1,7598395.0,7598395.0,True
+top_account_value|10,7023143.0,7023143.0,True
+top_account_value|2,7384295.0,7384295.0,True
+top_account_value|3,7382648.0,7382648.0,True
+top_account_value|4,7364892.0,7364892.0,True
+top_account_value|5,7343253.0,7343253.0,True
+top_account_value|6,7319088.0,7319088.0,True
+top_account_value|7,7312950.0,7312950.0,True
+top_account_value|8,7308682.0,7308682.0,True
+top_account_value|9,7094405.0,7094405.0,True

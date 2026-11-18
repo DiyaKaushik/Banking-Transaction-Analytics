@@ -1,0 +1,86 @@
+Databases on the server whose name contains 'financ' (names are case sensitive):
+    Financial_ijs, Financial_std, ctu_financial, financial
+
+========================================================================
+financial
+========================================================================
+account: 4,500 rows, 1 declared foreign keys
+    columns: account_id, district_id, frequency, date
+card: 892 rows, 1 declared foreign keys
+    columns: card_id, disp_id, type, issued
+client: 5,369 rows, 1 declared foreign keys
+    columns: client_id, gender, birth_date, district_id
+disp: 5,369 rows, 2 declared foreign keys
+    columns: disp_id, client_id, account_id, type
+district: 77 rows, 0 declared foreign keys
+    columns: district_id, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16
+loan: 682 rows, 1 declared foreign keys
+    columns: loan_id, account_id, date, amount, duration, payments, status
+order: 6,471 rows, 1 declared foreign keys
+    columns: order_id, account_id, bank_to, account_to, amount, k_symbol
+trans: 1,056,320 rows, 1 declared foreign keys
+    columns: trans_id, account_id, date, type, operation, amount, balance, k_symbol, bank, account
+TOTAL rows in financial: 1,079,680
+
+========================================================================
+Financial_ijs
+========================================================================
+accounts: 4,500 rows, 1 declared foreign keys
+    columns: id, district_id, frequency, date
+cards: 892 rows, 1 declared foreign keys
+    columns: id, disp_id, type, issued
+clients: 5,369 rows, 1 declared foreign keys
+    columns: id, birth_number, district_id, tkey_id
+disps: 5,369 rows, 2 declared foreign keys
+    columns: id, client_id, account_id, type
+districts: 77 rows, 0 declared foreign keys
+    columns: id, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16
+loans: 682 rows, 1 declared foreign keys
+    columns: id, account_id, date, amount, duration, payments, status
+orders: 6,471 rows, 1 declared foreign keys
+    columns: id, account_id, bank_to, account_to, amount, k_symbol
+tkeys: 234 rows, 0 declared foreign keys
+    columns: id, goodClient
+trans: 1,056,320 rows, 1 declared foreign keys
+    columns: id, account_id, date, type, operation, amount, balance, k_symbol, bank, account
+TOTAL rows in Financial_ijs: 1,079,914
+
+========================================================================
+Financial_std
+========================================================================
+Loan_Acc: 409 rows, 2 declared foreign keys
+    columns: loan_id, account_id
+Loan_Order: 894 rows, 2 declared foreign keys
+    columns: order_id, loan_id
+Loan_Trans: 80,013 rows, 2 declared foreign keys
+    columns: transaction_id, loan_id
+acc: 409 rows, 0 declared foreign keys
+    columns: account_id, frequency
+loan: 409 rows, 0 declared foreign keys
+    columns: loan_id, amount, duration, payments, status
+order: 6,471 rows, 0 declared foreign keys
+    columns: order_id, bank_to, amount3, k_symbol
+trans: 137,326 rows, 0 declared foreign keys
+    columns: transaction_id, type, operation, amount2, balance
+TOTAL rows in Financial_std: 225,931
+
+========================================================================
+ctu_financial
+========================================================================
+account: 4,500 rows, 0 declared foreign keys
+    columns: account_id, district_id, frequency, date
+card: 892 rows, 0 declared foreign keys
+    columns: card_id, disp_id, type, issued
+client: 5,369 rows, 0 declared foreign keys
+    columns: client_id, gender, birth_date, district_id
+disp: 5,369 rows, 0 declared foreign keys
+    columns: disp_id, client_id, account_id, type
+district: 77 rows, 0 declared foreign keys
+    columns: district_id, A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15, A16
+loan: 682 rows, 0 declared foreign keys
+    columns: loan_id, account_id, date, amount, duration, payments, status
+order: 6,471 rows, 0 declared foreign keys
+    columns: order_id, account_id, bank_to, account_to, amount, k_symbol
+trans: 1,056,320 rows, 0 declared foreign keys
+    columns: trans_id, account_id, date, type, operation, amount, balance, k_symbol, bank, account
+TOTAL rows in ctu_financial: 1,079,680

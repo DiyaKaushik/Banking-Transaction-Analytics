@@ -1,0 +1,330 @@
+
+========================================================================
+account: 4,500 rows x 4 columns
+========================================================================
+             dtype  nulls  distinct
+account_id   int64      0      4500
+district_id  int64      0        77
+frequency      str      0         3
+date           str      0      1535
+
+Sample (first 3 rows):
+ account_id  district_id        frequency       date
+          1           18 POPLATEK MESICNE 1995-03-24
+          2            1 POPLATEK MESICNE 1993-02-26
+          3            5 POPLATEK MESICNE 1997-07-07
+
+First column 'account_id' is unique: True
+Fully duplicated rows: 0
+
+Date range for 'date': 1993-01-01 00:00:00 to 1997-12-29 00:00:00 (unparseable values: 0)
+
+Values in 'frequency':
+frequency
+POPLATEK MESICNE      4167
+POPLATEK TYDNE         240
+POPLATEK PO OBRATU      93
+
+========================================================================
+card: 892 rows x 4 columns
+========================================================================
+         dtype  nulls  distinct
+card_id  int64      0       892
+disp_id  int64      0       892
+type       str      0         3
+issued     str      0       607
+
+Sample (first 3 rows):
+ card_id  disp_id    type     issued
+       1        9    gold 1998-10-16
+       2       19 classic 1998-03-13
+       3       41    gold 1995-09-03
+
+First column 'card_id' is unique: True
+Fully duplicated rows: 0
+
+Date range for 'issued': 1993-11-07 00:00:00 to 1998-12-29 00:00:00 (unparseable values: 0)
+
+Values in 'type':
+type
+classic    659
+junior     145
+gold        88
+
+========================================================================
+client: 5,369 rows x 4 columns
+========================================================================
+             dtype  nulls  distinct
+client_id    int64      0      5369
+gender         str      0         2
+birth_date     str      0      4738
+district_id  int64      0        77
+
+Sample (first 3 rows):
+ client_id gender birth_date  district_id
+         1      F 1970-12-13           18
+         2      M 1945-02-04            1
+         3      F 1940-10-09            1
+
+First column 'client_id' is unique: True
+Fully duplicated rows: 0
+
+Date range for 'birth_date': 1911-08-20 00:00:00 to 1987-09-27 00:00:00 (unparseable values: 0)
+
+Values in 'gender':
+gender
+M    2724
+F    2645
+
+========================================================================
+disp: 5,369 rows x 4 columns
+========================================================================
+            dtype  nulls  distinct
+disp_id     int64      0      5369
+client_id   int64      0      5369
+account_id  int64      0      4500
+type          str      0         2
+
+Sample (first 3 rows):
+ disp_id  client_id  account_id      type
+       1          1           1     OWNER
+       2          2           2     OWNER
+       3          3           2 DISPONENT
+
+First column 'disp_id' is unique: True
+Fully duplicated rows: 0
+
+Values in 'type':
+type
+OWNER        4500
+DISPONENT     869
+
+========================================================================
+district: 77 rows x 16 columns
+========================================================================
+               dtype  nulls  distinct
+district_id    int64      0        77
+A2               str      0        77
+A3               str      0         8
+A4             int64      0        77
+A5             int64      0        53
+A6             int64      0        36
+A7             int64      0        17
+A8             int64      0         6
+A9             int64      0        11
+A10          float64      0        70
+A11            int64      0        76
+A12          float64      1        41
+A13          float64      0        73
+A14            int64      0        44
+A15          float64      1        75
+A16            int64      0        76
+
+Sample (first 3 rows):
+ district_id          A2              A3      A4  A5  A6  A7  A8  A9   A10   A11  A12  A13  A14     A15   A16
+           1 Hl.m. Praha          Prague 1204953   0   0   0   1   1 100.0 12541  0.2 0.43  167 85677.0 99107
+           2     Benesov central Bohemia   88884  80  26   6   2   5  46.7  8507  1.6 1.85  132  2159.0  2674
+           3      Beroun central Bohemia   75232  55  26   4   1   5  41.7  8980  1.9 2.21  111  2824.0  2813
+
+First column 'district_id' is unique: True
+Fully duplicated rows: 0
+
+Values in 'A3':
+A3
+south Moravia      14
+central Bohemia    12
+east Bohemia       11
+north Moravia      11
+west Bohemia       10
+north Bohemia      10
+south Bohemia       8
+Prague              1
+
+Numeric summary (ID columns excluded):
+     count           mean            std       min       25%       50%        75%        max
+A4    77.0  133884.896104  136913.464909  42821.00  85852.00  108871.0  139012.00  1204953.0
+A5    77.0      48.623377      32.741829      0.00     22.00      49.0      71.00      151.0
+A6    77.0      24.324675      12.780991      0.00     16.00      25.0      32.00       70.0
+A7    77.0       6.272727       4.015222      0.00      4.00       6.0       8.00       20.0
+A8    77.0       1.727273       1.008338      0.00      1.00       2.0       2.00        5.0
+A9    77.0       6.259740       2.435497      1.00      5.00       6.0       8.00       11.0
+A10   77.0      63.035065      16.221727     33.90     51.90      59.8      73.50      100.0
+A11   77.0    9031.675325     790.202347   8110.00   8512.00    8814.0    9317.00    12541.0
+A12   76.0       3.072368       1.664179      0.20      1.70       2.8       3.85        7.3
+A13   77.0       3.787013       1.908480      0.43      2.31       3.6       4.79        9.4
+A14   77.0     116.129870      16.608773     81.00    105.00     113.0     126.00      167.0
+A15   76.0    4850.315789    9888.951933    818.00   2029.75    2932.0    4525.50    85677.0
+A16   77.0    5030.831169   11270.796786    888.00   2122.00    3040.0    4595.00    99107.0
+
+========================================================================
+loan: 682 rows x 7 columns
+========================================================================
+              dtype  nulls  distinct
+loan_id       int64      0       682
+account_id    int64      0       682
+date            str      0       559
+amount        int64      0       645
+duration      int64      0         5
+payments    float64      0       577
+status          str      0         4
+
+Sample (first 3 rows):
+ loan_id  account_id       date  amount  duration  payments status
+    4959           2 1994-01-05   80952        24    3373.0      A
+    4961          19 1996-04-29   30276        12    2523.0      B
+    4962          25 1997-12-08   30276        12    2523.0      A
+
+First column 'loan_id' is unique: True
+Fully duplicated rows: 0
+
+Date range for 'date': 1993-07-05 00:00:00 to 1998-12-08 00:00:00 (unparseable values: 0)
+
+Values in 'status':
+status
+C    403
+A    203
+D     45
+B     31
+
+Numeric summary (ID columns excluded):
+          count           mean            std     min      25%       50%       75%       max
+amount    682.0  151410.175953  113372.406310  4980.0  66732.0  116928.0  210654.0  590820.0
+duration  682.0      36.492669      17.075219    12.0     24.0      36.0      48.0      60.0
+payments  682.0    4190.664223    2215.830344   304.0   2477.0    3934.0    5813.5    9910.0
+
+========================================================================
+order: 6,471 rows x 6 columns
+========================================================================
+              dtype  nulls  distinct
+order_id      int64      0      6471
+account_id    int64      0      3758
+bank_to         str      0        13
+account_to    int64      0      6446
+amount      float64      0      4412
+k_symbol        str   1379         4
+
+Sample (first 3 rows):
+ order_id  account_id bank_to  account_to  amount k_symbol
+    29401           1      YZ    87144583  2452.0     SIPO
+    29402           2      ST    89597016  3372.7     UVER
+    29403           2      QR    13943797  7266.0     SIPO
+
+First column 'order_id' is unique: True
+Fully duplicated rows: 0
+
+Values in 'bank_to':
+bank_to
+QR    531
+YZ    521
+AB    519
+WX    515
+ST    511
+KL    500
+UV    499
+IJ    496
+GH    487
+OP    485
+EF    483
+MN    466
+CD    458
+
+Values in 'k_symbol':
+k_symbol
+SIPO        3502
+NaN         1379
+UVER         717
+POJISTNE     532
+LEASING      341
+
+Numeric summary (ID columns excluded):
+             count          mean           std    min         25%         50%         75%         max
+account_to  6471.0  4.939904e+07  2.888356e+07  399.0  24159184.0  49756062.0  74000447.5  99994199.0
+amount      6471.0  3.280636e+03  2.714475e+03    1.0      1241.5      2596.0      4613.5     14882.0
+
+========================================================================
+trans: 1,056,320 rows x 10 columns
+========================================================================
+              dtype   nulls  distinct
+trans_id      int64       0   1056320
+account_id    int64       0      4500
+date            str       0      2191
+type            str       0         3
+operation       str  183114         5
+amount        int64       0     35890
+balance       int64       0    111042
+k_symbol        str  481881         8
+bank            str  782812        13
+account     float64  760931      7665
+
+Sample (first 3 rows):
+ trans_id  account_id       date   type     operation  amount  balance k_symbol bank    account
+        1           1 1995-03-24 PRIJEM         VKLAD    1000     1000      NaN  NaN        NaN
+        5           1 1995-04-13 PRIJEM PREVOD Z UCTU    3679     4679      NaN   AB 41403269.0
+        6           1 1995-05-13 PRIJEM PREVOD Z UCTU    3679    20977      NaN   AB 41403269.0
+
+First column 'trans_id' is unique: True
+Fully duplicated rows: 0
+
+Date range for 'date': 1993-01-01 00:00:00 to 1998-12-31 00:00:00 (unparseable values: 0)
+
+Values in 'type':
+type
+VYDAJ     634571
+PRIJEM    405083
+VYBER      16666
+
+Values in 'operation':
+operation
+VYBER             434918
+PREVOD NA UCET    208283
+NaN               183114
+VKLAD             156743
+PREVOD Z UCTU      65226
+VYBER KARTOU        8036
+
+Values in 'k_symbol':
+k_symbol
+NaN            481881
+UROK           183114
+SLUZBY         155832
+SIPO           118065
+                53433
+DUCHOD          30338
+POJISTNE        18500
+UVER            13580
+SANKC. UROK      1577
+
+Values in 'bank':
+bank
+NaN    782812
+QR      22285
+AB      21720
+ST      21711
+YZ      21582
+GH      21499
+EF      21293
+KL      21234
+UV      21167
+OP      21094
+IJ      20525
+WX      20178
+MN      19623
+CD      19597
+
+Numeric summary (ID columns excluded):
+             count          mean           std      min         25%         50%         75%         max
+amount   1056320.0  5.924211e+03  9.522698e+03      0.0       136.0      2100.0      6800.0     87400.0
+balance  1056320.0  3.851838e+04  2.211787e+04 -41126.0     22403.0     33143.0     49604.0    209637.0
+account   295389.0  4.567092e+07  3.066340e+07      0.0  17828584.0  45750951.0  72013407.0  99994199.0
+
+========================================================================
+Key relationships (matched on column names ending in '_id')
+========================================================================
+account.district_id -> district.district_id: 0 of 4,500 rows with no match
+card.disp_id -> disp.disp_id: 0 of 892 rows with no match
+client.district_id -> district.district_id: 0 of 5,369 rows with no match
+disp.client_id -> client.client_id: 0 of 5,369 rows with no match
+disp.account_id -> account.account_id: 0 of 5,369 rows with no match
+loan.account_id -> account.account_id: 0 of 682 rows with no match
+order.account_id -> account.account_id: 0 of 6,471 rows with no match
+trans.account_id -> account.account_id: 0 of 1,056,320 rows with no match
