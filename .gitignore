@@ -1,0 +1,20 @@
+# Data: the raw files are downloaded by script; redistribution terms are unclear
+data/raw/
+data/processed/
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Secrets and local files
+.env
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
